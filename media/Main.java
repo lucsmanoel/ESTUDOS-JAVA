@@ -13,10 +13,17 @@ public class Main {
         System.out.println("Digite o Terceiro Valor");
              int numero3 = scanner.nextInt();
 
-/* CRIEI UMA VARIAVEL INTEIRA COM NOME DE RESULTADO ARMAZENEI RESULTADO DA FUNÇAO NELA*/
+        /* CRIEI UMA VARIAVEL INTEIRA COM NOME DE RESULTADO ARMAZENEI RESULTADO DA FUNÇAO NELA*/
         int resultado = Main.soma(numero1, numero2, numero3);
-        // Correção aqui: usando Main.soma e passando três argumentos
         System.out.println("A SUA MEDIA É " + resultado);
+
+        if(resultado== 5){
+            System.out.println("Você precisa melhorar suas notas");
+        }else if(resultado>6){
+            System.out.println("Voce foi aprovado com media " + resultado );
+        }else{
+            System.out.println("Voce foi reprovado");
         }
 
+        }
     }
